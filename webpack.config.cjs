@@ -8,6 +8,7 @@ module.exports = {
 	entry: {
 		index: './src/index.js',
 	},
+	
 	devServer: {
 		static: {
 			directory: path.join(__dirname, 'dist'),
@@ -21,10 +22,9 @@ module.exports = {
 		},
 	},
 	output: {
-		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'dist'),
-		clean: true,
-	},
+		path: path.resolve(__dirname, 'public'),  // Output to 'public' directory
+		filename: 'bundle.js',
+	  },
 	plugins: [
 		new ESLintPlugin({
 			extensions: ['js'],
@@ -40,3 +40,5 @@ module.exports = {
 	],
 	devtool: 'source-map',
 };
+
+
