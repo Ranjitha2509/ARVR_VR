@@ -14,7 +14,7 @@
 		"webpack-dev-server": "^5.1.0"
 	},
 	"scripts": {
-		"build": "node ./node_modules/webpack/bin/webpack.js  --output public",
+		"build": "node ./node_modules/webpack/bin/webpack.js build --output public",
 		"dev": "webpack serve",
 		"format": "prettier --write ./src/**/*"
 	},
