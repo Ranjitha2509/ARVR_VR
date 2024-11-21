@@ -32,8 +32,7 @@ To run TredFit locally, follow these steps:
 3. **Run the Application**:
    Start a local server to run the application. You can use any HTTP server, such as `http-server`:
    ```bash
-   npm install -g http-server
-   http-server
+   npm run dev
    ```
 
 4. **Access the Application**:
