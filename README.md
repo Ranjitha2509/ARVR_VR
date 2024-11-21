@@ -11,7 +11,7 @@ TredFit is a virtual fitness application designed to provide an immersive workou
 - **User Data Collection**: Collects user data such as name, weight, height, and fitness milestones.
 - **Interactive UI**: Provides a user-friendly interface with welcome screens, forms, and success messages.
 - **3D Models**: Loads and displays 3D models of the workout environment.
-- **Score Display**: Shows the user's score and other relevant information during the workout.
+- 
 
 ## Installation
 
@@ -19,7 +19,7 @@ To run TredFit locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/tredfit.git
+   git clone https://github.com/Ranjitha2509/ARVR_VR.git
    cd tredfit
    ```
 
@@ -64,15 +64,10 @@ To run TredFit locally, follow these steps:
 - **Three.js**: A JavaScript 3D library used for rendering the VR environment.
 - **WebXR**: Provides support for immersive VR experiences in web browsers.
 - **GLTFLoader**: A loader for loading 3D models in GLTF format.
-- **Troika-three-text**: A library for rendering text in Three.js.
 
 ## Contributing
 
 Contributions to TredFit are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ## Acknowledgements
 
