@@ -11,7 +11,6 @@ TredFit is a virtual fitness application designed to provide an immersive workou
 - **User Data Collection**: Collects user data such as name, weight, height, and fitness milestones.
 - **Interactive UI**: Provides a user-friendly interface with welcome screens, forms, and success messages.
 - **3D Models**: Loads and displays 3D models of the workout environment.
-- 
 
 ## Installation
 
@@ -70,9 +69,15 @@ Contributions to TredFit are welcome! If you have any ideas, suggestions, or bug
 
 ## Acknowledgements
 
-- The Three.js community for providing excellent documentation and examples.
-- The WebXR team for enabling immersive web experiences.
-- All contributors who help make TredFit a better application.
+- **CAVE Labs:** Special thanks to CAVE (CAVE Augmented and Virtual Environments) Lab for their support.
+- **Dr. Adithya Balasubraminiyam:** Grateful acknowledgment to Dr. Adithya Balasubraminiyam, course instructor and mentor, for his invaluable help and insights.
+- **PES University and Department of CSE:** Special thanks to PES University and the Department of Computer Science and Engineering for their support and resources.
+
+## Contributors
+
+- Sharanya G S
+- Shreeraksha 
+- Ranjitha
 
 ---
 
