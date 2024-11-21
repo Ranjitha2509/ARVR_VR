@@ -20,7 +20,7 @@ To run TredFit locally, follow these steps:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Ranjitha2509/ARVR_VR.git
-   cd tredfit
+   cd ARVR_VR
    ```
 
 2. **Install Dependencies**:
