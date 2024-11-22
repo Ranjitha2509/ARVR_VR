@@ -51,6 +51,21 @@ To run TredFit locally, follow these steps:
 4. **VR Environment**:
    Once in the VR environment, you can start your workout. The application will track your movement, calculate calories burned, and display your score.
 
+## Upcoming Additions : Teleportation
+**Overview:**
+We are currently developing the teleportation feature to enhance navigation in the VR environment. This feature allows users to move quickly by pointing their controllers and triggering a teleport action.
+
+**Challenges:**
+1. **Controller Direction Detection:** The application sometimes fails to accurately detect the controller's pointing direction due to inconsistencies in WebXR API reports.
+2. **Intersection Detection:** The raycaster occasionally misses intersections with the ground or other objects, causing unexpected behavior.
+
+**Next Steps:**
+1. **Refine Raycaster Logic:** Improve accuracy in detecting the controller's pointing direction.
+2. **Enhance Error Handling:** Implement robust error handling for missed intersections.
+3. **Testing and Optimization:** Conduct extensive testing to fix remaining bugs and ensure a smooth teleportation experience.
+
+Thank you for your patience and support as we work to finalize this feature! 🚀
+
 ## Code Structure
 
 - **`init.js`**: Contains the main initialization logic for the VR environment, including scene setup, camera configuration, and WebXR integration.
