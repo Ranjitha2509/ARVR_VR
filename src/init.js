@@ -217,4 +217,50 @@ export async function init(setupScene = () => {}, onFrame = () => {}) {
 
     // Add VR button to the document
     document.body.appendChild(VRButton.createButton(renderer));
+
+    // Teleportation logic
+function handleTeleportation(controller) {
+    // Create a Raycaster object to cast a ray from the controller
+    const teleportRaycaster = new THREE.Raycaster();
+
+    // Create a Vector3 object to store the teleport target position
+    const teleportTarget = new THREE.Vector3();
+
+    // Set the origin and direction of the raycaster to match the controller's position and direction
+    teleportRaycaster.set(
+        controller.raySpace.position, // Origin of the ray (controller's position)
+        controller.raySpace.getWorldDirection(new THREE.Vector3()) // Direction of the ray (controller's pointing direction)
+    );
+
+    // Check for intersections with objects in the scene
+    const intersects = teleportRaycaster.intersectObjects(scene.children, true);
+
+    // If there are intersections, process the first one (closest to the controller)
+    if (intersects.length > 0) {
+        // Copy the intersection point (where the ray hits an object) to the teleport target
+        teleportTarget.copy(intersects[0].point);
+
+        // Ensure the player maintains the same height during teleportation
+        // This is done by setting the y-coordinate of the teleport target to the current player's y-coordinate
+        teleportTarget.y = player.position.y;
+
+        // Update the player's position to the teleport target
+        player.position.copy(teleportTarget);
+    }
+}
+
+// Add event listeners for teleportation
+for (const handedness in controllers) {
+    const controller = controllers[handedness];
+    if (controller) {
+        // Add an event listener for the 'buttonpressed' event on the gamepad
+        controller.gamepad.addEventListener('buttonpressed', (event) => {
+            // Check if the pressed button is the 'trigger' button
+            if (event.button === 'trigger') {
+                // If the trigger button is pressed, handle teleportation for this controller
+                handleTeleportation(controller);
+            }
+        });
+    }
+}
 }
