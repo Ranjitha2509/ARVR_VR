@@ -64,7 +64,7 @@ We are currently developing the teleportation feature to enhance navigation in t
 2. **Enhance Error Handling:** Implement robust error handling for missed intersections.
 3. **Testing and Optimization:** Conduct extensive testing to fix remaining bugs and ensure a smooth teleportation experience.
 
-Thank you for your patience and support as we work to finalize this feature! 🚀
+Thank you for your patience and support as we work to finalize this feature! 
 
 ## Code Structure
 
